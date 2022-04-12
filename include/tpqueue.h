@@ -4,10 +4,10 @@
 
 template<typename T, int size>
 class TPQueue {
-  private:
+   private:
   T arr[100];
   int first, last;
-  public:
+   public:
   TPQueue() : first(0), last(0) {}
   void push(T x) {
   int param = last++;
@@ -19,7 +19,7 @@ class TPQueue {
   T pop() {
   return arr[(first++)%size];
   }
-  };
+};
 
 struct SYM {
   char ch;
